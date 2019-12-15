@@ -21,9 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\sdk\include\rplidar.h">
-      <Filter>sdk\include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\sdk\include\rplidar_cmd.h">
       <Filter>sdk\include</Filter>
     </ClInclude>
@@ -86,6 +83,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\sdk\src\rplidar_driver_impl.h">
       <Filter>sdk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sdk\include\rplidar.h">
+      <Filter>sdk\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

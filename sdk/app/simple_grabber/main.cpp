@@ -107,8 +107,10 @@ void plot_histogram(rplidar_response_measurement_node_t * nodes, size_t count)
 
 u_result capture_and_display(RPlidarDriver * drv)
 {
+	//define the ans variable as a unsigned result
     u_result ans;
-    
+
+	//generate 8192 steps
     rplidar_response_measurement_node_t nodes[8192];
     size_t   count = _countof(nodes);
 
@@ -138,18 +140,28 @@ u_result capture_and_display(RPlidarDriver * drv)
 }
 
 int main(int argc, const char * argv[]) {
+	//comport path
     const char * opt_com_path = NULL;
+	//define a 32 bit unsigned int of 115200 for the baudrate
     _u32         opt_com_baudrate = 115200;
+	//32bit text character?
+	// todo: what is typedef??
     u_result     op_result;
 
+	
+    //if the argument is less than 2 show the usage.
     if (argc < 2) {
         print_usage(argc, argv);
         return -1;
     }
+	//define the comport
     opt_com_path = argv[1];
+
+	//the 3rd argument gives 115200
     if (argc>2) opt_com_baudrate = strtoul(argv[2], NULL, 10);
 
     // create the driver instance
+	//create drive to connect use the Serial port
     RPlidarDriver * drv = RPlidarDriver::CreateDriver(DRIVER_TYPE_SERIALPORT);
 
     if (!drv) {
@@ -228,6 +240,7 @@ int main(int argc, const char * argv[]) {
             break;
         }
 
+    	//start the motor at the default RPM which is 660
         drv->startMotor();
 
         // take only one 360 deg scan and display the result as a histogram

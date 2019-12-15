@@ -1,0 +1,12 @@
+﻿  net_serial.cpp
+C:\Users\nitr0\Documents\GitHub\rplidar_sdk\sdk\sdk\src\arch\win32\net_serial.cpp(35,10): fatal error C1083: Cannot open include file: 'sdkcommon.h': No such file or directory
+  net_socket.cpp
+C:\Users\nitr0\Documents\GitHub\rplidar_sdk\sdk\sdk\src\arch\win32\net_socket.cpp(11,10): fatal error C1083: Cannot open include file: 'sdkcommon.h': No such file or directory
+  timer.cpp
+C:\Users\nitr0\Documents\GitHub\rplidar_sdk\sdk\sdk\src\arch\win32\timer.cpp(35,10): fatal error C1083: Cannot open include file: 'sdkcommon.h': No such file or directory
+  thread.cpp
+C:\Users\nitr0\Documents\GitHub\rplidar_sdk\sdk\sdk\src\hal\thread.cpp(35,10): fatal error C1083: Cannot open include file: 'sdkcommon.h': No such file or directory
+  rplidar_driver.cpp
+C:\Users\nitr0\Documents\GitHub\rplidar_sdk\sdk\sdk\src\sdkcommon.h(48,10): fatal error C1083: Cannot open include file: 'rplidar.h': No such file or directory
+  Source.cpp
+  Generating Code...
